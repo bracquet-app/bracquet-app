@@ -1,0 +1,237 @@
+/* Bracquet CSS 
+    Premium, Minimalist Sports Aesthetic
+*/
+
+:root {
+    --court-green: #2d5a27;
+    --deep-blue: #1a2a3a;
+    --off-white: #fcfcf9;
+    --soft-gray: #e0e0d5;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a4a4a;
+    --white: #ffffff;
+    --accent-blue: #3a7bd5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--off-white);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Header */
+header {
+    padding: 24px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: var(--court-green);
+}
+
+.nav-button {
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 1px solid var(--soft-gray);
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.nav-button:hover {
+    background-color: var(--soft-gray);
+}
+
+/* Hero Section */
+.hero {
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(40px, 8vw, 72px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    color: var(--deep-blue);
+    letter-spacing: -2px;
+}
+
+.subtitle {
+    font-size: clamp(18px, 3vw, 24px);
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: var(--court-green);
+    color: var(--white);
+    padding: 18px 36px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: transform 0.2s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(45, 90, 39, 0.15);
+}
+
+/* Feature Section */
+.features {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 60px;
+    letter-spacing: -1px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 40px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: var(--court-green);
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+/* Screenshots Section */
+.screenshots {
+    padding: 80px 0;
+}
+
+.screenshot-grid {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.mockup {
+    width: 260px;
+    height: 520px;
+    background: var(--soft-gray);
+    border-radius: 36px;
+    border: 8px solid var(--deep-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    font-size: 14px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Philosophy Section */
+.philosophy {
+    padding: 100px 0;
+    background-color: var(--deep-blue);
+    color: var(--white);
+}
+
+.philosophy h2 {
+    font-size: 32px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.philosophy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+}
+
+.philosophy-grid h4 {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--accent-blue);
+}
+
+.philosophy-grid p {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    padding: 40px 0;
+    border-top: 1px solid var(--soft-gray);
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links a {
+    margin-left: 24px;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 0;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .screenshot-grid {
+        gap: 16px;
+    }
+
+    .mockup {
+        width: 200px;
+        height: 400px;
+    }
+}
