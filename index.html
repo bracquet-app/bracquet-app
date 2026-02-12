@@ -3,53 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bracquet | For Courts, Not Feeds.</title>
+    <title>Bracquet | Master Your Court</title>
+    <meta name="description" content="The ultimate analytics app for Badminton, Tennis, Squash, Pickleball, and Table Tennis.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="hero-court-bg">
-        <div class="container">
-            <nav style="margin-bottom: 80px; display: flex; justify-content: space-between; align-items: center;">
-                <div style="font-weight: 800; font-size: 24px;">BRACQUET</div>
-                <div style="font-size: 12px; letter-spacing: 2px;">EST. 2024</div>
-            </nav>
+    <nav>
+        <div class="logo">Bracquet<span class="dot">.</span></div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#about">About</a>
+            <a href="mailto:bracquet.app@gmail.com" class="btn-primary">Contact Us</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Coming Soon</span>
+            <h1>Track Your Game.<br>Master Your Court.</h1>
+            <p>The all-in-one analytics platform for racquet sports. Track matches, calculate ELO, and visualize your progress like a pro.</p>
             
-            <div class="hero-content">
-                <h1>For courts,<br>not feeds.</h1>
-                <p class="subtitle">Match tracking. Professional ELO. Real play.</p>
-                <a href="#" class="btn-play">Get it on Google Play</a>
+            <div class="cta-group">
+                <a href="mailto:bracquet.app@gmail.com?subject=Join Waitlist" class="btn-primary">Join the Waitlist <i class="fas fa-arrow-right"></i></a>
+                <span class="sub-text">Be the first to know when we launch.</span>
+            </div>
+
+            <div class="sports-pills">
+                <span class="pill"><i class="fas fa-shuttlecock"></i> Badminton</span>
+                <span class="pill"><i class="fas fa-table-tennis"></i> Table Tennis</span>
+                <span class="pill"><i class="fas fa-baseball-ball"></i> Tennis</span>
+                <span class="pill"><i class="fas fa-cookie"></i> Pickleball</span>
+                <span class="pill"><i class="fas fa-circle"></i> Squash</span>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="mockup-placeholder">
+                <i class="fas fa-mobile-alt"></i>
+                <p>App Screenshot</p>
             </div>
         </div>
     </header>
 
-    <section class="features">
+    <section id="features" class="features">
         <div class="container">
+            <h2>Pro-Level Analytics for Everyone</h2>
             <div class="feature-grid">
                 <div class="feature-card">
-                    <h3>Logging</h3>
-                    <p>Standardized match entry for singles and doubles.</p>
+                    <i class="fas fa-chart-line icon"></i>
+                    <h3>ELO Rating System</h3>
+                    <p>Stop guessing your skill level. Get a precise, dynamic rating that updates after every match.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Elo Rating</h3>
-                    <p>A fair, high-integrity rating system designed for racket sports.</p>
+                    <i class="fas fa-trophy icon"></i>
+                    <h3>Leaderboards</h3>
+                    <p>Compete with friends or your local club. Climb the ranks and earn bragging rights.</p>
                 </div>
                 <div class="feature-card">
+                    <i class="fas fa-history icon"></i>
+                    <h3>Match History</h3>
+                    <p>Keep a digital log of every game, opponent, and score. Never forget a victory.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users icon"></i>
                     <h3>Community</h3>
-                    <p>Play with real players in your local club or court.</p>
+                    <p>Find opponents, organize matches, and foster healthy competition in your area.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container" style="display: flex; justify-content: space-between;">
-            <div>&copy; BRACQUET</div>
-            <div>
-                <a href="#">Privacy</a>
-                <a href="#">Contact</a>
+    <section id="about" class="about-dev">
+        <div class="container dev-layout">
+            <div class="dev-text">
+                <h3>Meet the Developer</h3>
+                <h4>Danggen Tek <span class="dev-role">Solo Developer & Athlete</span></h4>
+                <p>"I have been playing badminton for over 6 years, competing at university and inter-institute levels. As a deceptive doubles player, I know the value of strategy."</p>
+                <p>I built <strong>Bracquet</strong> to solve a personal problem: there was no easy way to identify skill levels and foster healthy competition. This app is my contribution to the sports community.</p>
             </div>
+            <div class="dev-card">
+                <div class="avatar-placeholder">DT</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="brand">
+                <h4>Bracquet</h4>
+                <p>Built with <i class="fas fa-heart"></i> by <strong>Danggen Tek</strong>.</p>
+            </div>
+            <div class="contact-info">
+                <p>Questions? Feedback?</p>
+                <a href="mailto:bracquet.app@gmail.com">bracquet.app@gmail.com</a>
+            </div>
+        </div>
+        <div class="legal">
+            <p>&copy; 2026 Danggen Tek. All rights reserved.</p>
+            <a href="#">Privacy Policy</a>
         </div>
     </footer>
 
